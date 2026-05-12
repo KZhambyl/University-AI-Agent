@@ -1,0 +1,255 @@
+Agent test run — 2026-05-08_20-48-28
+======================================================================
+
+======================================================================
+Query 1: Хочу учиться в тёплой стране
+======================================================================
+Tools used (16): ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+
+Answer:
+Вот университеты в тёплых странах:
+
+### Бразилия
+1. **Fundação Hermínio Ometto** — [сайт](https://www.fho.edu.br/)
+   К сожалению, информация о данном университете недоступна.
+
+2. **Universidade Comunitária da Região de Chapecó - Unochapecó** — [сайт](https://unochapeco.edu.br)
+   К сожалению, информация о данном университете недоступна.
+
+3. **Centro Universitário de Brasília, UNICEUB** — [сайт](https://www.uniceub.br)
+   К сожалению, информация о данном университете недоступна.
+
+### Таиланд
+1. **Asian Institute of Technology** — [сайт](https://www.ait.ac.th/)
+   Азиатский институт технологий, основанный в 1959 году, является международной организацией для высшего образования, расположенной в 40 км к северу от Бангкока. Он специализируется на инженерии, современных технологиях, устойчивом развитии и управлении.
+
+2. **Asia-Pacific International University** — [сайт](https://www.apiu.edu/)
+   Частный христианский университет, расположенный в Сарабури, Таиланд. Он является единственным учебным заведением, обслуживающим Юго-Восточную Азию Союза адвентистов седьмого дня.
+
+3. **Phranakhon Si Ayutthaya Rajabhat University** — [сайт](https://www.aru.ac.th/)
+   К сожалению, информация о данном университете недоступна.
+
+### Мексика
+1. **Universidad Anáhuac** — [сайт](http://www.anahuac.mx/)
+   Сеть университетов Anáhuac состоит из частных учебных заведений, управляемых религиозной конгрегацией Легиона Христа.
+
+2. **Universidad de La Salle, Bajío** — [сайт](http://bajio.delasalle.edu.mx/)
+   К сожалению, информация о данном университете недоступна.
+
+3. **Benemerita Universidad Autónoma de Puebla** — [сайт](http://www.buap.mx/)
+   Старейший и крупнейший университет в Пуэбле, основанный в 1578 году.
+
+### Курсы валют:
+- Бразилия: 1 BRL = 93.98 KZT
+- Таиланд: 1 THB = 14.37 KZT
+- Мексика: 1 MXN = 26.82 KZT
+
+======================================================================
+Query 2: Какие университеты есть в Европе?
+======================================================================
+Tools used (7): ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+
+Answer:
+Вот университеты в Европе:
+
+### Германия
+1. **IU Internationale Hochschule GmbH** — [сайт](https://www.iu-fernstudium.de/)
+   Университет, предлагающий различные программы дистанционного обучения и аккредитованные степени.
+
+2. **AKAD Hochschulen für Berufstätige, Fachhochschule Leipzig** — [сайт](http://www.akad.de/)
+   Университет, ориентированный на профессионалов, предлагающий гибкие учебные программы.
+
+3. **Alice-Salomon-Fachhochschule für Sozialarbeit und Sozialpädagogik Berlin** — [сайт](http://www.asfh-berlin.de/)
+   Специализированный университет в области социальных наук и педагогики.
+
+### Франция
+1. **National Institute of Applied Sciences of Toulouse** — [сайт](https://insa-toulouse.fr)
+   Один из ведущих инженерных институтов во Франции, предлагающий высококачественное образование в области науки и технологий.
+
+2. **IÉSEG School of Management** — [сайт](https://ieseg.fr)
+   Престижная бизнес-школа, известная своими программами MBA и международной направленностью.
+
+3. **Central Supélec** — [сайт](https://www.centralesupelec.fr/)
+   Институт, предлагающий образование в области инженерии и технологий с акцентом на инновации.
+
+### Италия
+1. **Pontificia Università S. Tommaso** — [сайт](http://www.angelicum.org/)
+   Католический университет, предлагающий программы в области философии, теологии и гуманитарных наук.
+
+2. **Pontificio Ateneo Antonianum** — [сайт](http://www.antonianum.ofm.org/)
+   Университет, специализирующийся на теологии и философии, основанный францисканцами.
+
+3. **University of Modena** — [сайт](http://www.casa.unimo.it/)
+   Один из старейших университетов в Италии, предлагающий широкий спектр программ.
+
+Курс валюты:
+- Германия: 1 EUR = 544.87 KZT
+- Франция: 1 EUR = 544.87 KZT
+- Италия: 1 EUR = 544.87 KZT
+
+======================================================================
+Query 3: Посоветуй вуз в Германии
+======================================================================
+Tools used (5): ['search_universities', 'get_country_currency_rate', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary']
+
+Answer:
+Вот университеты в Германии:
+
+1. **IU Internationale Hochschule GmbH** — [сайт](https://www.iu-fernstudium.de/)
+   IU International University of Applied Sciences — это частный университет прикладных наук, основанный в 2000 году и расположенный в Эрфурте, Германия. Ранее он был известен как Международный университет прикладных наук Бад Хоннеф / Бонн.
+
+2. **AKAD Hochschulen für Berufstätige, Fachhochschule Leipzig** — [сайт](http://www.akad.de/)
+   Краткое описание недоступно.
+
+3. **Alice-Salomon-Fachhochschule für Sozialarbeit und Sozialpädagogik Berlin** — [сайт](http://www.asfh-berlin.de/)
+   Краткое описание недоступно.
+
+Курс валюты: 1 EUR = 544.87 KZT
+
+======================================================================
+Query 4: Куда поехать учиться, если бюджет небольшой?
+======================================================================
+Tools used (15): ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+
+Answer:
+Вот университеты в странах с недорогой жизнью:
+
+### Вьетнам
+1. **Phan Chau Trinh University** — [сайт](https://pctu.edu.vn/)
+   Краткое описание недоступно.
+   
+2. **Duy Tan University** — [сайт](https://duytan.edu.vn/)
+   Duy Tân University — это частный исследовательский университет в Дананге, Вьетнам. Название происходит от Движения модернизации, существовавшего в 1906–1908 годах. В 2019 году университет был награждён «Медалью труда I степени».
+
+### Индия
+1. **Atharva College of Engineering** — [сайт](https://atharvacoe.ac.in)
+   Краткое описание недоступно.
+
+2. **Bhagwan Parshuram Institute of Technology** — [сайт](http://bpitindia.ac.in)
+   Краткое описание недоступно.
+
+3. **University of Petroleum and Energy Studies** — [сайт](https://www.upes.ac.in/)
+   Краткое описание недоступно.
+
+### Мексика
+1. **Universidad Anáhuac** — [сайт](http://www.anahuac.mx/)
+   Сеть университетов Anáhuac — это система частных университетов, управляемая религиозной конгрегацией Легиона Христа. Сеть состоит из нескольких университетов, расположенных в разных странах мира, включая Мексику, США, Чили, Испанию, Италию и Францию.
+
+2. **Universidad de La Salle, Bajío** — [сайт](http://bajio.delasalle.edu.mx/)
+   Краткое описание недоступно.
+
+3. **Benemerita Universidad Autónoma de Puebla** — [сайт](http://www.buap.mx/)
+   Meritorious Autonomous University of Puebla (BUAP) — старейший и крупнейший университет в Пуэбле, Мексика. Основан 15 апреля 1578 года как Colegio del Espíritu Santo, университет стал публичным в 1937 году.
+
+### Курс валюты:
+- Вьетнам: 1 VND = 0.02 KZT
+- Индия: 1 INR = 4.91 KZT
+- Мексика: 1 MXN = 26.82 KZT
+
+======================================================================
+Query 5: Хочу в Азию, расскажи варианты
+======================================================================
+Tools used (13): ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+
+Answer:
+Вот университеты в Азии:
+
+### Китай
+1. **Sun Yat-Sen University** — [сайт](https://sysu.edu.cn)  
+   Краткое описание недоступно.
+
+2. **Hunan University** — [сайт](https://www.hnu.edu.cn)  
+   Краткое описание недоступно.
+
+### Индия
+1. **Atharva College of Engineering** — [сайт](https://atharvacoe.ac.in)  
+   Краткое описание недоступно.
+
+2. **Bhagwan Parshuram Institute of Technology** — [сайт](http://bpitindia.ac.in)  
+   Краткое описание недоступно.
+
+### Япония
+1. **Aichi Shukutoku University** — [сайт](http://www.aasa.ac.jp/)  
+   Краткое описание недоступно.
+
+2. **Aichi Bunkyo University** — [сайт](http://www.abu.ac.jp/)  
+   Краткое описание недоступно.
+
+Курс валюты:
+- Китай: 1 CNY = 67.95 KZT
+- Индия: 1 INR = 4.91 KZT
+- Япония: 1 JPY = 2.96 KZT
+
+======================================================================
+Query 6: Расскажи про университеты в Италии и сколько это в тенге
+======================================================================
+Tools used (5): ['search_universities', 'get_country_currency_rate', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary']
+
+Answer:
+Вот университеты в Италии:
+
+1. **Pontificia Università S. Tommaso** — [сайт](http://www.angelicum.org/)
+   Папский университет святого Фомы Аквинского (PUST), также известный как Angelicum, расположен в историческом центре Рима и управляется Орденом доминиканцев.
+
+2. **Pontificio Ateneo Antonianum** — [сайт](http://www.antonianum.ofm.org/)
+   К сожалению, нет доступной информации из Википедии.
+
+3. **University of Modena** — [сайт](http://www.casa.unimo.it/)
+   Университет Модены и Реджо-Эмилии, основанный в 1175 году, является одним из старейших университетов Европы и насчитывает около 20,000 студентов.
+
+Курс валюты: 1 EUR = 544.87 KZT
+
+======================================================================
+Query 7: Где учиться в англоязычной стране?
+======================================================================
+Tools used (16): ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+
+Answer:
+Вот университеты в англоязычных странах:
+
+### Соединенные Штаты:
+1. **Marywood University** — [сайт](http://www.marywood.edu)  
+   Краткое описание недоступно.
+
+2. **Lindenwood University** — [сайт](http://www.lindenwood.edu/)  
+   Краткое описание недоступно.
+
+3. **Sullivan University** — [сайт](https://sullivan.edu/)  
+   Краткое описание недоступно.
+
+### Великобритания:
+1. **West Herts College** — [сайт](https://westherts.ac.uk)  
+   Краткое описание недоступно.
+
+2. **Royal Holloway University of London** — [сайт](https://rhul.ac.uk)  
+   Краткое описание недоступно.
+
+3. **University of Portsmouth** — [сайт](http://www.port.ac.uk/)  
+   Краткое описание недоступно.
+
+### Канада:
+1. **Toronto Baptist Seminary and Bible College** — [сайт](https://tbs.edu)  
+   Краткое описание недоступно.
+
+2. **Cégep de Saint-Jérôme** — [сайт](https://www.cstj.qc.ca)  
+   Краткое описание недоступно.
+
+3. **Lambton College** — [сайт](https://www.lambtoncollege.ca)  
+   Краткое описание недоступно.
+
+Курс валюты:
+- 1 USD = 463.12 KZT
+- 1 GBP = 630.49 KZT
+- 1 CAD = 339.76 KZT
+
+
+======================================================================
+SUMMARY
+======================================================================
+Query 1: 16 tool calls — ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+Query 2: 7 tool calls — ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+Query 3: 5 tool calls — ['search_universities', 'get_country_currency_rate', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary']
+Query 4: 15 tool calls — ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+Query 5: 13 tool calls — ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']
+Query 6: 5 tool calls — ['search_universities', 'get_country_currency_rate', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary']
+Query 7: 16 tool calls — ['resolve_countries', 'search_universities', 'search_universities', 'search_universities', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_univeristy_summary', 'get_country_currency_rate', 'get_country_currency_rate', 'get_country_currency_rate']

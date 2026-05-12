@@ -1,0 +1,92 @@
+services:
+  # ---------------------------------------------------------------------------
+  # OpenWebUI — UI слой, тот же что в L48-L49, но порт 3010 (не конфликтует с L48 и L49)
+  # ---------------------------------------------------------------------------
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: lesson50-open-webui
+    ports:
+      - "3010:8080"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WEBUI_SECRET_KEY=${WEBUI_SECRET_KEY}
+      - ENABLE_FORWARD_USER_INFO_HEADERS=True
+    volumes:
+      - open-webui-data:/app/backend/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    depends_on:
+      - tool-server
+
+  # ---------------------------------------------------------------------------
+  # tool_server — БЕЗ изменений из L49
+  # ---------------------------------------------------------------------------
+  tool-server:
+    build: ./tool_server
+    container_name: lesson50-tool-server
+    ports:
+      - "8004:8003"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - LLM_MODEL=${LLM_MODEL:-gpt-5-mini}
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # Pipelines server — отдельный сервер для Langfuse-фильтра.
+  # Это ОТДЕЛЬНАЯ концепция от Functions: Pipelines = OpenAPI-compatible сервер,
+  # который вешается на OpenWebUI как ещё одно "OpenAI provider".
+  # Через него работают filter-пайплайны (наш Langfuse).
+  # ---------------------------------------------------------------------------
+  pipelines:
+    image: ghcr.io/open-webui/pipelines:main
+    container_name: lesson50-pipelines
+    ports:
+      - "9099:9099"
+    volumes:
+      - ./pipelines:/app/pipelines/imported
+      - pipelines-data:/app/pipelines
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # Langfuse v2 — observability платформа.
+  # Используем v2 а не v3, потому что:
+  #   - v2 = 1 контейнер + 1 postgres (всего 2 сервиса)
+  #   - v3 = 6 контейнеров (postgres + clickhouse + redis + minio + web + worker)
+  # Для учебной демонстрации v2 более чем достаточно.
+  # ---------------------------------------------------------------------------
+  langfuse-db:
+    image: postgres:15
+    container_name: lesson50-langfuse-db
+    environment:
+      - POSTGRES_USER=langfuse
+      - POSTGRES_PASSWORD=langfuse
+      - POSTGRES_DB=langfuse
+    volumes:
+      - langfuse-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  langfuse:
+    image: langfuse/langfuse:2
+    container_name: lesson50-langfuse
+    depends_on:
+      - langfuse-db
+    ports:
+      - "3001:3000"
+    environment:
+      - DATABASE_URL=postgresql://langfuse:langfuse@langfuse-db:5432/langfuse
+      - NEXTAUTH_URL=http://localhost:3001
+      - NEXTAUTH_SECRET=${LANGFUSE_NEXTAUTH_SECRET}
+      - SALT=${LANGFUSE_SALT}
+      - ENCRYPTION_KEY=${LANGFUSE_ENCRYPTION_KEY}
+      - TELEMETRY_ENABLED=false
+      - LANGFUSE_DEFAULT_ORG_CREATE=true
+      - LANGFUSE_DEFAULT_PROJECT_CREATE=true
+    restart: unless-stopped
+
+volumes:
+  open-webui-data:
+  pipelines-data:
+  langfuse-db-data:
